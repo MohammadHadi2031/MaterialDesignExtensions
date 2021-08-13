@@ -49,7 +49,7 @@ namespace MaterialDesignExtensions.Converters
 
             if (brush == null)
             {
-                brush = System.Windows.Application.Current.TryFindResource("MaterialDesignDivider") as Brush;
+                brush = System.Windows.Application.Current?.TryFindResource("MaterialDesignDivider") as Brush;
             }
 
             return brush;
